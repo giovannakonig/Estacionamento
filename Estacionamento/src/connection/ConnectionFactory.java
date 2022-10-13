@@ -9,7 +9,7 @@ package connection;
 
 public class ConnectionFactory {
 private static final String DRIVER = "com.mysql.jbdc.Driver";
-private static final String URL = "jbdc:mysql://localhost:3306/estacionamento";
+private static final String URL = "jbdc:mysql://localhost:3307/estacionamento";
 private static final String USER = "root";
 private static final String PASS = "";
 
