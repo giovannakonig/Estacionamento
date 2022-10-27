@@ -17,3 +17,14 @@ CREATE TABLE vaga (
     rua varchar(100) NOT NULL,
     obiqua boolean NOT NULL,
     PRIMARY KEY (idVaga));
+
+CREATE TABLE motorista (
+    idMotorista int NOT NULL AUTO_INCREMENT,
+    nome varchar(200) NOT NULL,
+    genero varchar(100) NOT NULL,
+    rg varchar(10) NOT NULL,
+    cpf varchar(11) NOT NULL,
+    celular varchar(11) NOT NULL,
+    email varchar(100) NOT NULL,
+    senha varchar(10) NOT NULL,
+    PRIMARY KEY (idMotorista));
