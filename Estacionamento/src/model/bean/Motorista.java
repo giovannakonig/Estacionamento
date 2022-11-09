@@ -1,22 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model.bean;
 
-/**
- *
- * @author 01983820067
- */
 public class Motorista {
+
+    private int idMotorista;
     private String nome;
-    private String genero;
-    private String rg; 
+    private boolean homem;
+    private String rg;
     private String cpf;
     private String celular;
     private String email;
     private String senha;
+
+    public int getIdMotorista() {
+        return idMotorista;
+    }
+
+    public void setIdMotorista(int idMotorista) {
+        this.idMotorista = idMotorista;
+    }
 
     public String getNome() {
         return nome;
@@ -26,12 +27,12 @@ public class Motorista {
         this.nome = nome;
     }
 
-    public String getGenero() {
-        return genero;
+    public boolean isHomem() {
+        return homem;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setHomem(boolean homem) {
+        this.homem = homem;
     }
 
     public String getRg() {
@@ -73,6 +74,6 @@ public class Motorista {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
 
+    
 }

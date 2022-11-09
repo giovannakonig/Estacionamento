@@ -1,12 +1,10 @@
-
 package model.bean;
 
-
 public class Vaga {
- 
+
     private int idVaga;
     private int numero;
-    private String rua; 
+    private String rua;
     private boolean obliqua;
 
     public int getIdVaga() {
@@ -40,5 +38,5 @@ public class Vaga {
     public void setObliqua(boolean obliqua) {
         this.obliqua = obliqua;
     }
-    
+
 }
