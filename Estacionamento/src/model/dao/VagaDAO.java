@@ -113,7 +113,7 @@ public class VagaDAO {
         stmt = con.prepareStatement ("UPDATE vaga SET numero=?, rua =?, obliqua=? WHERE idVaga=?");
         stmt.setInt (1, v.getNumero());
         stmt.setString(2, v.getRua());
-        stmt.setBoolean(3, v.isObliqua());
+        stmt.setBoolean(3, v.getObliqua());
         stmt.setInt(4, v.getIdVaga());
         stmt.executeUpdate();
         JOptionPane.showMessageDialog(null, "Vaga atualizadaco sucess");
