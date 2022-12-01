@@ -72,7 +72,8 @@ public class AtualizarMotorista extends javax.swing.JFrame {
         jBtnLimpar = new javax.swing.JButton();
         lblIdMotorista = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Atualizar Motorista");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Atualizar Motorista");
@@ -315,6 +316,13 @@ public class AtualizarMotorista extends javax.swing.JFrame {
 
     private void jBtnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLimparActionPerformed
         // TODO add your handling code here:
+          bGGenero.clearSelection();
+        jTFCelular.setText("");
+        jTFCpf.setText("");
+        jTFEmail.setText("");
+        jTFNome.setText("");
+        jTFRg.setText("");
+        jTFSenha.setText("");
     }//GEN-LAST:event_jBtnLimparActionPerformed
 
     /**
@@ -351,7 +359,7 @@ public class AtualizarMotorista extends javax.swing.JFrame {
             }
         });
     }
-
+private javax.swing.ButtonGroup bGGenero;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jBtnCancelar;
     private javax.swing.JButton jBtnLimpar;

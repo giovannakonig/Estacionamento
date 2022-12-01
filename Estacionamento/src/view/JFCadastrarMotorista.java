@@ -51,7 +51,8 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
         jBtnSalvar = new javax.swing.JButton();
         jBtnLimpar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastrar Motorista");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Cadastrar Motorista");
@@ -285,7 +286,14 @@ public class JFCadastrarMotorista extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtnSalvarActionPerformed
 
     private void jBtnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLimparActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here: 
+        BGGenero.clearSelection();
+        jTFCelular.setText("");
+        jTFCpf.setText("");
+        jTFEmail.setText("");
+        jTFNome.setText("");
+        jTFRg.setText("");
+        jTFSenha.setText("");
 
     }//GEN-LAST:event_jBtnLimparActionPerformed
 
